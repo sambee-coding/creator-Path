@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #E7F2EF;
+}
+#loginForm{
+    text-align: center;
+    margin-top:15%;
+}
+#loginForm label{
+    margin-top: px;
+    font-family: "kelly slab";
+}
+#loginForm input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding:5px 10px 5px 10px;
+    width: 45%;
+    border-radius: 10px;
+    border:1px solid rgb(40, 30, 51);
+  background-color: #E8F0FE;
+}
+#loginForm h1{
+    margin-top: 5%;
+    font-family: "kelly slab";
+    margin-bottom: 10%;
+}
+#loginForm button{
+    padding: 10px 20px ;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "kelly slab";
+    background-color: rgb(33, 13, 52);
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    margin-bottom: 10%;
+}
+#loginForm button:hover{
+    color:black;
+    background-color: #827fe7;
+    transform: scale(1.1);
+}
+.kelly-slab-regular {
+  font-family: "Kelly Slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#loginForm{
+    display: block;
+    margin: 0 auto;
+    border: 1px dashed #827fe7;
+    width:  500px;
+    margin-top: 15%;
+    border-radius: 14px;
+    
+
+
+}

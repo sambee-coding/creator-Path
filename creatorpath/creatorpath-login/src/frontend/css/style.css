@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+   
+}
+body{
+    background-color: #e7f2ef;
+}
+.kelly-slab-regular {
+  font-family: "Kelly Slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav{
+    margin:30px;
+}
+
+nav ul {
+display: flex;
+justify-content: start;
+
+
+}
+
+nav ul li{
+    list-style: none;
+    font-family: "kelly slab";
+    font-size:35px;
+}
+.home-text{
+position: relative; 
+height: 70vh;
+
+}
+
+h1{
+  position: absolute;
+   top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "kelly slab";
+    font-weight: lighter;
+    font-size: 55px;
+}
+.btn{
+    margin-top: 0;
+}
+button{
+    
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color:#5653BB;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}

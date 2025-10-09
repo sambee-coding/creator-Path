@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color:#E7F2EF;
+}
+h1{
+    text-align: center;
+    margin-bottom:19px ;
+    font-family: "kelly slab";
+}
+.kelly-slab-regular {
+  font-family: "Kelly Slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+form{
+    margin-top: 15%;
+display: block;
+margin: 0 auto;
+margin-top:9%;
+  border: 2px dashed #3467 ;
+ width: 500px;
+ padding: 40px;
+ border-radius: 15px;
+ 
+}
+form input{
+    margin: 8px;
+    padding: 10px 40px;
+    border-radius: 9px;
+   background-color: #5653BB;
+   /* background-color: rgb(107, 81, 131);*/
+    border-color: rgb(46, 26, 32);
+}
+form label{
+    font-family: "kelly slab";
+}
+form button {
+     display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 9px;
+  border: none;
+  background-color: #080724;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background 0.3s ease;
+}
+form button:hover {
+  background-color: #403c9f;
+  transform: scale(1.1);
+}
+#message {
+  margin-top: 15px;
+  font-family: "Kelly Slab", sans-serif;
+  font-size: 16px;
+}

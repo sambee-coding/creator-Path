@@ -11,12 +11,24 @@ const app = express();
 app.use(express.static("frontend"));
 
 app.use(helmet());
+const allowedOrigins = [
+  "http://127.0.0.1:5501", // local dev
+  "http://localhost:3000",  // local dev (React/Vite)
+  "https://creatorpath-login-xxxx.vercel.app" // production
+];
+
 app.use(cors({
-  
- origin: "http://127.0.0.1:5501",  // or ["http://127.0.0.1:5501", "http://localhost:3000"] if multiple
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
+  credentials: true
 }));
+
 app.use(express.json());
 app.use(cookieParser());
 

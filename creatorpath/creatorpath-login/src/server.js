@@ -7,8 +7,9 @@ const joi= require("joi");
 
 const authRoutes = require("./routes/auth.routes");
 
+const path = require("path");
 const app = express();
-app.use(express.static("frontend"));
+app.use(express.static(path.join(__dirname, "frontend")));
 
 app.use(helmet());
 const allowedOrigins = [

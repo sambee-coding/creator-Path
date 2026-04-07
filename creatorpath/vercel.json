@@ -3,10 +3,8 @@
   "builds": [
     { "src": "creatorpath-login/src/api/index.js", "use": "@vercel/node" }
   ],
-  "routes": [
-    { 
-      "src": "/api/(.*)",
-       "dest": "creatorpath-login/src/api/index.js"
-  }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "creatorpath-login/src/api/index.js" },
+    { "source": "/(.*)", "destination": "creatorpath-login/src/frontend/$1" }
   ]
 }

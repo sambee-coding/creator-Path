@@ -15,7 +15,7 @@ loginForm.addEventListener("submit" , async (e) =>{
    console.log("your data is ",data); //this shows the data we entered in our login form in the form of object
 
    try{
-    const response = await fetch("http://localhost:3001/auth/login",{
+    const response = await fetch("http://localhost:8000/auth/login/",{
         
         method : "POST",
         headers : {

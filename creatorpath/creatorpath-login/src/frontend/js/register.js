@@ -13,12 +13,12 @@ form.addEventListener("submit", async (e) => {
 
   try {
     // Send the data to backend
-    const res = await fetch("http://localhost:3001/auth/register", {
+    const res = await fetch("http://localhost:8000/auth/register/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username, email, password }),
+      body: JSON.stringify({ name: username, email, password }),
     });
 
     const data = await res.json();

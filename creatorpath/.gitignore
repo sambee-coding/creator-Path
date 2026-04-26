@@ -1,11 +1,10 @@
 node_modules/
-.vercel/
+**/node_modules/
 .env
+**/venv/
+**/__pycache__/
 *.log
+.vercel/
 dist/
 build/
-venv/
-__pycache__/
-*.pyc
-db.sqlite3
 .DS_Store
